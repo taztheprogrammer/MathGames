@@ -1,6 +1,6 @@
-var num = randVal(100);
-var num1 =  randVal(100);
-var sum = num + num1
+var num = 1;
+var num1 = 1;
+var sum = num + num1;
 
 
 function randVal(highest) {
@@ -8,11 +8,13 @@ function randVal(highest) {
 }
 
 const display = document.getElementById('display');
-const answer = document.getElementById('answer');
+const topA = document.getElementById('top');
+const bottomA = document.getElementById('bottom');
 const addbox = document.getElementById('addbox');
 
-display.innerHTML = `${num} + ${num1}`;
-answer.innerHTML = `${sum}`;
+topA.innerHTML = num;
+bottomA.innerHTML = num1;
+
 
 addbox.addEventListener('keyup', function(event) {
     if (event.key === 'Enter') {
@@ -26,9 +28,8 @@ function reset() {
         num = randVal(100);
         num1 =  randVal(100);
         sum = num + num1;
-    
-        display.innerHTML = `${num} + ${num1}`;
-        answer.innerHTML = `${sum}`;
+        topA.innerHTML = num;
+        bottomA.innerHTML = num1;
         addbox.value = '';
     }
 }
