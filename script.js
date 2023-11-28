@@ -22,6 +22,16 @@ addbox.addEventListener('keyup', function(event) {
     }
 })
 
+light.addEventListener('click', color);
+
+function color() {
+    const body = document.getElementById('body')
+    if(body.style.backgroundColor == 'gray') {
+        body.style.backgroundColor = 'white';
+    } else {
+        body.style.backgroundColor = 'gray';
+    }
+}
 
 function reset() {
     if (addbox.value == sum) {
