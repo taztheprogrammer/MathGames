@@ -47,6 +47,10 @@ span {
     font-size: 30px;
 }
 
+fieldset{
+border: none;
+}
+
 
 
 

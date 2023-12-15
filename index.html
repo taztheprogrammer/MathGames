@@ -20,6 +20,19 @@
     <div id="flexcontainer">
         <input type='number' id="addbox"> 
     </div>
+    <div id="settings">
+        <fieldset>
+            <label>Single
+            <input type="radio" name="digits" value="1" checked onclick="updateNum(this)">
+            </label>
+            <label>Double
+                <input type="radio" name="digits" value="10"  onclick="updateNum(this)">
+            </label>
+            <label>Triple
+                 <input type="radio" name="digits" value="100" onclick="updateNum(this)">
+             </label>
+        </fieldset>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
