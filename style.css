@@ -21,6 +21,11 @@ header button {
     height: 20px;
 }
 
+/* This is the score */
+#points {
+    font-size: 1.5rem;
+}
+
 #flexcontainer {
     display: flex;
     flex-direction: column;
@@ -55,7 +60,7 @@ border: none;
 /*addbox*/
 #addbox {
     outline: none;
-    border: none;
+    border: 1px solid black;
     border-radius: 10px;
     height: 30px;
     text-align: center;

@@ -12,6 +12,7 @@ const display = document.getElementById('display');
 const topA = document.getElementById('top');
 const bottomA = document.getElementById('bottom');
 const addbox = document.getElementById('addbox');
+const points = document.getElementById('points')
 
 //digits control
 function updateNum(button) {
@@ -50,8 +51,14 @@ function reset() {
         topA.innerHTML = num;
         bottomA.innerHTML = num1;
         addbox.value = '';
+        addpoints();
     }
 }
 
+//this increments points
+var score = 0;
 
-
+function addpoints() {
+    score++;
+    points.innerHTML=score;
+}
