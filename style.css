@@ -21,8 +21,14 @@ header button {
     height: 20px;
 }
 
-/* This is the score */
-#points {
+/* This div contains all the scores horizonally*/
+#Scores {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* This is the style for the points bellow header */
+.pointCard {
     font-size: 1.5rem;
 }
 
@@ -56,7 +62,6 @@ fieldset{
 border: none;
 }
 
-
 /*addbox*/
 #addbox {
     outline: none;
@@ -80,3 +85,9 @@ input[type="number"]::-webkit-inner-spin-button,
     width: 100%;
     margin-bottom: 30px;
 } */
+
+
+/* This is for the timer*/
+#countdown {
+    display: inline;
+}

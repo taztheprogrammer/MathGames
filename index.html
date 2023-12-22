@@ -12,7 +12,9 @@
         <button id="light">light</button>
     </header>
     <hr>
-    <div>Score: <span id="points">0</span>
+    <div id="Scores">
+    <div>Score: <span class="pointCard" id="points">0</span></div>
+    <div>Best: <span class="pointCard" id="mpoints">0</span></div>
     </div>
     <hr>
     <div id="display">
@@ -36,6 +38,8 @@
                  <input type="radio" name="digits" value="100" onclick="updateNum(this)">
              </label>
         </fieldset>
+        <button id="timer">60 SECONDS</button>
+        <span id="countdown">100</span>
     </div>
     <script src="script.js"></script>
 </body>

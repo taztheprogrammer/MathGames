@@ -62,3 +62,27 @@ function addpoints() {
     score++;
     points.innerHTML=score;
 }
+
+//this is the timer and the corresponding display "countdown"
+const timer = document.getElementById('timer');
+const countdown = document.getElementById('countdown')
+
+timer.onclick = () => {
+    // Set the initial time to 60 seconds
+    let timeInSeconds = 60;
+
+    // Update the countdown every second
+    const intervalId = setInterval(() => {
+        // Display the current time in the countdown span
+        countdown.innerHTML = timeInSeconds;
+
+        // Decrease the time by 1 second
+        timeInSeconds--;
+
+        // If the time reaches 0, stop the timer
+        if (timeInSeconds < 0) {
+            clearInterval(intervalId);
+            countdown.innerHTML = 'Time is up!';
+        }
+    }, 1000); // 1000 milliseconds = 1 second
+};
